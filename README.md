@@ -1,4 +1,4 @@
-# mo_dev_auth
+# momopoly_api
 
 To deploy, add MYSQL_CONNECTION_STRING to env and build and push docker image and run an update on kubectl
 

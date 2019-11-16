@@ -1,9 +1,9 @@
-# mohammaddev/mo_dev_auth
+# mohammaddev/momopoly_api
 
 FROM node:12.8.0-alpine
 
 ENV COMPlus_EnableDiagnostics=0
-WORKDIR /usr/share/mo_dev_auth
+WORKDIR /usr/share/momopoly_api
 
 RUN apk update && apk upgrade \
     && apk add --no-cache git \
@@ -12,8 +12,8 @@ RUN apk update && apk upgrade \
 ENV PORT 6001
 EXPOSE 6001
 
-COPY . /usr/share/mo_dev_auth
-RUN cd /usr/share/mo_dev_auth
+COPY . /usr/share/momopoly_api
+RUN cd /usr/share/momopoly_api
 RUN yarn
 
 CMD ["yarn", "start"]
